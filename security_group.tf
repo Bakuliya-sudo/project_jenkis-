@@ -1,7 +1,7 @@
 
 resource "aws_security_group" "security" {
   name        = "security"
-  description = "http and https"
+  #description = "http and https"
   vpc_id     = "${aws_vpc.Team1.id}"
   ingress {
     #description = "jenkings from VPC"
@@ -36,5 +36,8 @@ ingress {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+  tags = {
+    Name = "allow_jenkins"
   }
 }
