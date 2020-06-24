@@ -1,19 +1,15 @@
-# project_jenkis-
-Please create the VPC using terraform. Make sure the code work in every region of AWS. 
+#Jenkings Instance
 
-VPC
-6 subnets
+## This repozitory is to create a Jenkings Amazon instance in a private VPC
+For this project we used terraform 11.14 version.
 
-   3 private 
-
-   3 public 
-
-Public subnets should have IGW attached to it. 
-
-Private subnets should have NG attached to it. 
-
-Configure route tables properly. Once private and public subnet created, please create ec2 instance (manually)  on public subnet and ping google.com. If everything is successful, you should have proper response
-
-Moving forward, on that VPC you just provisioned, please create ec2 intance to install jenkins. Jenkins has to be installed using terraform provisioner. One command should create VPC with the components, and build jenkins on top of it. Once the jenkins up and running, please print out the username password as an output
-
-Please read the instructions and requirements of the instance needed for jenkins
+1. vpc.tf file is to create a private VPC with variable region with private and public subnets ( private_subnest.tf and public_subnets.yf files). 
+2. variable.tf file helps your code to be deployed in any region.
+3. setenv.sh file is made to change the workspace of your instance and manage the states, please create this file in your repository and coppy all the information attached to that file, next step is to create a foldes #configuations, where you have your .tfvars. files that contains all the regions you need to create the instance and keep in mind that because we have .gitignore that keep the information of those file local.
+4. instanceAMI.tf file is used to find the lates ami-id for Amazon intaces, because we want this repository to be used globaly we used owner_id intance.
+5. In order to connect to your ec2-user we created our key_pair.tf.
+6. The public subnets need to be attached to our interenet gateway, the code is in networking.tf file.
+7. securitygroups.tf has the necesary ports opened for your intance to have jenkings running. 
+8. to install jenkins see the codes in null_resource.tf file.
+9. All your metadata should me stored in a S3 buket and for that need to have backend.tf file that personalize your storage name. This file should be present in #configuration folder as well. This S3 buked will be loked and only the team members will have acces to it. 
+10. in the instance.tf file we add all the dependency needed to make it reusable. 
