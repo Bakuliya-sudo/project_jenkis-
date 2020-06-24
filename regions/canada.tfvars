@@ -1,0 +1,1 @@
+regions = "ca-central-1"

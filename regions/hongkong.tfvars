@@ -1,0 +1,1 @@
+regions = "ap-east-1"

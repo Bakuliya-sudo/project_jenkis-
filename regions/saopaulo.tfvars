@@ -1,0 +1,1 @@
+regions = "sa-east-1"
