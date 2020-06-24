@@ -1,8 +1,9 @@
-
 resource "aws_security_group" "security" {
-  name        = "security"
+  name = "security"
+
   #description = "http and https"
-  vpc_id     = "${aws_vpc.Team1.id}"
+  vpc_id = "${aws_vpc.Team1.id}"
+
   ingress {
     #description = "jenkings from VPC"
     from_port   = 8080
@@ -10,6 +11,7 @@ resource "aws_security_group" "security" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
   ingress {
     #description = "http from VPC"
     from_port   = 80
@@ -17,6 +19,7 @@ resource "aws_security_group" "security" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
   ingress {
     #description = "https from VPC"
     from_port   = 443
@@ -24,19 +27,22 @@ resource "aws_security_group" "security" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-ingress {
+
+  ingress {
     #description = "ssh from VPC"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
   tags = {
     Name = "allow_jenkins"
   }

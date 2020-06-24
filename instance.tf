@@ -1,9 +1,10 @@
 resource "aws_instance" "my_instance" {
-  ami    = "ami-09d95fab7fff3776c"
-  instance_type = "t2.micro"
-  key_name = "${aws_key_pair.deployer.key_name}"
+  ami                    = "${data.aws_ami.amazon.id}"
+  instance_type          = "t2.micro"
+  key_name               = "${aws_key_pair.deployer.key_name}"
   vpc_security_group_ids = ["${aws_security_group.security.id}"]
-  subnet_id = "${aws_subnet.public1.id}"
+  subnet_id              = "${aws_subnet.public1.id}"
+
   user_data = <<EOF
     #!/bin/bash
 
@@ -51,6 +52,6 @@ resource "aws_instance" "my_instance" {
   EOF
 
   tags = {
-      Name = "jenkins"
-      }
+    Name = "jenkins"
+  }
 }

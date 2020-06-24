@@ -1,4 +1,3 @@
-
 # resource "aws_instance" "centos" {
 #   ami        = "${data.aws_ami.centos.id}"
 #   key_name      = "${aws_key_pair.deployer.key_name}"
@@ -11,7 +10,6 @@
 #         private_key = "${file("~/.ssh/id_rsa")}"
 #     }
 #     #inline = [
-
 #     #   "sudo yum install -y epel-release -y",
 #     #   "sudo yum update",
 #     #   "sudo reboot",
@@ -39,3 +37,4 @@
 #         private_key = "${file("~/.ssh/id_rsa")}"
 #     }
 #   }
+
