@@ -1,4 +1,11 @@
-regions = "ap-southeast-1"
+region = "ap-southeast-1"
+java_version            = "-1.8.0-openjdk-devel"
+jenkins_version         = "jenkins"
+key_name = "singapore-key"
+instance_type = "t2.micro"
+az1 = "a"
+az2 = "b"
+az3 = "c"
 
 # Below code is used to set backend only
 environment                     =   "singapore"

@@ -1,4 +1,11 @@
-regions = "ap-northwest-2"
+region = "ap-northwest-2"
+ava_version            = "-1.8.0-openjdk-devel"
+jenkins_version         = "jenkins"
+key_name = "seoul-key"
+instance_type = "t2.micro"
+az1 = "a"
+az2 = "b"
+az3 = "c"
 # Below code is used to set backend only
 environment                     =   "seoul"
 s3_bucket                       =   "terraform-state-april-class-mihaela"

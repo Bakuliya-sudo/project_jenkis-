@@ -1,4 +1,11 @@
-regions = "af-south-1"
+region = "af-south-1"
+ava_version            = "-1.8.0-openjdk-devel"
+jenkins_version         = "jenkins"
+key_name = "africa-key"
+instance_type = "t2.micro"
+az1 = "a"
+az2 = "b"
+az3 = "c"
 
 # Below code is used to set backend only
 environment                     =   "africa"
