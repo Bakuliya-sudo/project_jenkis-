@@ -13,3 +13,6 @@ For this project we used terraform 11.14 version.
 8. to install jenkins see the codes in null_resource.tf file.
 9. All your metadata should me stored in a S3 buket and for that need to have backend.tf file that personalize your storage name. This file should be present in #configuration folder as well. This S3 buked will be loked and only the team members will have acces to it. 
 10. in the instance.tf file we add all the dependency needed to make it reusable. 
+in your workspace please run # spurce setenv.sh -var-file configurations/regions/ohio.tfvars to change the local file in Ohio ( or choose the necesary region).
+after you set your workspace run #terraform init, then #terraform apply -var-file configurations/regions/ohio.tfvar to create your Jenkings instance.
+coppy the instance public-ip and in your browser add :8080 to connect to jenkins service.
