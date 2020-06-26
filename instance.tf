@@ -5,6 +5,8 @@ resource "aws_instance" "my_instance" {
   key_name               = "${aws_key_pair.deployer.key_name}"
   vpc_security_group_ids = ["${aws_security_group.security.id}"]
   subnet_id              = "${aws_subnet.public1.id}"
+  
+
 }
 
 #   user_data = <<EOF
