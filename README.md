@@ -1,23 +1,24 @@
 
 
-# Scope of the project is to create the VPC in AWS and install Jenkis using Terraform. Code should work in every region of AWS. 
+# Scope of the project is to create the VPC in AWS and install Jenkis using Terraform. 
+Code should work in every region of AWS. 
 
 ## Prerequisites
-- - VPC requirements
+-  VPC requirements
 6 subnets
 3 private subnets
 3 public subnets  
 
-- - Public subnets should have IGW attached to it in order to have access to the internet.  
+-  Public subnets should have IGW attached to it in order to have access to the internet.  
 
-- - Configure route tables properly.
+- -Configure route tables properly.
 Once private and public subnet created, please create ec2 instance (manually)  on public subnet and ping google.com. If everything is successful, you should have proper response
 
-- - Moving forward, on that VPC you just provisioned, please create ec2 intance to install Jenkins:
+-  Moving forward, on that VPC you just provisioned, please create ec2 intance to install Jenkins:
 
-- - Jenkins has to be installed using terraform provisioner.
-- - One command should create VPC with the components, and build jenkins on top of it.
-- - Once the Jenkins up and running, please print out the username password as an output
+-  Jenkins has to be installed using terraform provisioner.
+-  One command should create VPC with the components, and build jenkins on top of it.
+-  Once the Jenkins up and running, please print out the username password as an output
 Please read the instructions and requirements of the instance needed for Jenkins.
 
 ## Since this project has two components we will split the presentation in two: First it will be the creation and components of the VPC. Second will be Jenkis instalation.
