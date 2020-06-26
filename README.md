@@ -1,5 +1,6 @@
-#Prerequisites
-##Scope of the project is to create the VPC in AWS and install Jenkis using Terraform. Code should work in every region of AWS. 
+# Prerequisites
+
+## Scope of the project is to create the VPC in AWS and install Jenkis using Terraform. Code should work in every region of AWS. 
 
 VPC requirements
 6 subnets
@@ -18,14 +19,14 @@ One command should create VPC with the components, and build jenkins on top of i
 Once the Jenkins up and running, please print out the username password as an output
 Please read the instructions and requirements of the instance needed for Jenkins.
 
-##Since this project has two components we will split the presentation in two: First it will be the creation and components of the VPC. Second will be Jenkis instalation.
+## Since this project has two components we will split the presentation in two: First it will be the creation and components of the VPC. Second will be Jenkis instalation.
 
-#VPC
+# VPC
 
 
---##Components of the VPC:
+- - ## Components of the VPC:
 
---Private and Public Subnets
+- - Private and Public Subnets
 
 1.The configuration for this scenario includes a VPC with a public and private subnets. We recommend this scenario if you want to run a public-facing web application, while maintaining back-end servers that aren't publicly accessible.
 2.We will use 3 private subnets and 3 public subnets. Our EC2 instance for Jenkis will be attached to a public subnets in order to have internet connections.
@@ -35,12 +36,12 @@ Please read the instructions and requirements of the instance needed for Jenkins
 2. Internet Gateway should be attached to VPC.
 3. Add a route to your subnet's route that directs internet-bound traffic to the internet gateway. If a subnet is associated with a route table that has a route to an internet gateway, it's know as a public subnet. If a subent is associated with a route table that does not have a route to an internet gateway, it's know as a private subnet.
 
---Route Table
+-- Route Table
 
 Route table contains a set of rules, called route, that are used to determine where network traffic from your subnet or gateway is directed.
 each subnet in your VPC must be associated with a route table.
 
---Security Group AWS 
+-- Security Group AWS 
 
 1. Security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
 when you launch an instance in a VPC, you can assign up to five security groups to the instance.
