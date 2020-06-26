@@ -1,5 +1,6 @@
 resource "aws_internet_gateway" "gw" {
   vpc_id = "${aws_vpc.Team1.id}"
+
   tags {
     name = "jenkings"
   }

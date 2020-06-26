@@ -11,7 +11,7 @@ data "aws_ami" "amazon" {
     values = ["hvm"]
   }
 
-  owners = ["137112412989"] # Canonical
+  owners = ["${var.owner_name}"]
 }
 
 output "AMAZON_AMI_ID" {

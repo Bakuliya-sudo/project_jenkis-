@@ -1,6 +1,8 @@
 variable "region" {}
 variable "key_name" {}
+variable "owner_name" {}
 variable "instance_type" {}
+
 variable "java_version" {}
 variable "jenkins_version" {}
 variable "az1" {}
