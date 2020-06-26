@@ -186,3 +186,6 @@ for every region we have created a .tfvar file and you can find those in Region 
 <img width="995" alt="Screen Shot 2020-06-26 at 1 05 36 PM" src="https://user-images.githubusercontent.com/66444567/85888470-456aac00-b7af-11ea-8eff-6bd6177ac226.png">
 
 <img width="991" alt="Screen Shot 2020-06-26 at 1 08 08 PM" src="https://user-images.githubusercontent.com/66444567/85888491-4d2a5080-b7af-11ea-84ad-5398689305a4.png">
+
+<img width="1268" alt="Screen Shot 2020-06-26 at 1 08 47 PM" src="https://user-images.githubusercontent.com/66444567/85888555-6c28e280-b7af-11ea-9ccc-896bdbcf8884.png">
+
