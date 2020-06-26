@@ -77,7 +77,7 @@ Each region has a different number of availability zones, at least two is the mi
 Amazon EC2 provides scalable computing capacity in the AWS cloud, virtual computing environments, known as instances.
 
 ## Jenkins
-- - Automation Tool 
+- Automation Tool 
 
 Jenkis is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
