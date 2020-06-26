@@ -144,7 +144,14 @@ When we want to change the workspace and create a VPC and install Jenkings need 
 
 source setenv.sh configurations/regions/ohio.tfvar
 
+<img width="1085" alt="Screen Shot 2020-06-26 at 12 56 36 PM" src="https://user-images.githubusercontent.com/66444567/85888308-f6bd1200-b7ae-11ea-8dd6-24dd99e86bcc.png">
+
+
 for every region we have created a .tfvar file and you can find those in Region folder.
+
+<img width="1051" alt="Screen Shot 2020-06-26 at 1 00 01 PM" src="https://user-images.githubusercontent.com/66444567/85888346-09374b80-b7af-11ea-9b45-65812910090a.png">
+
+<img width="658" alt="Screen Shot 2020-06-26 at 1 01 51 PM" src="https://user-images.githubusercontent.com/66444567/85888381-181dfe00-b7af-11ea-81b2-04e01018ec8e.png">
 
 .tfvarsfiles
 
@@ -167,3 +174,15 @@ for every region we have created a .tfvar file and you can find those in Region 
 - sydney.tfvars
 - tokyo.tfvars
 - virginia.tfvars
+
+
+<img width="1440" alt="Screen Shot 2020-06-24 at 2 26 27 PM" src="https://user-images.githubusercontent.com/66444567/85888400-21a76600-b7af-11ea-91b3-52c3ffad4c74.png">
+
+<img width="1030" alt="Screen Shot 2020-06-26 at 1 04 48 PM" src="https://user-images.githubusercontent.com/66444567/85888437-3552cc80-b7af-11ea-9b2a-eb05058ff195.png">
+
+
+<img width="990" alt="Screen Shot 2020-06-26 at 1 05 08 PM" src="https://user-images.githubusercontent.com/66444567/85888450-3c79da80-b7af-11ea-9db4-1297ddc3bc6b.png">
+
+<img width="995" alt="Screen Shot 2020-06-26 at 1 05 36 PM" src="https://user-images.githubusercontent.com/66444567/85888470-456aac00-b7af-11ea-8eff-6bd6177ac226.png">
+
+<img width="991" alt="Screen Shot 2020-06-26 at 1 08 08 PM" src="https://user-images.githubusercontent.com/66444567/85888491-4d2a5080-b7af-11ea-84ad-5398689305a4.png">
