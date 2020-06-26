@@ -4,14 +4,11 @@
 Code should work in every region of AWS. 
 
 ## Prerequisites
--  VPC requirements
-6 subnets
-3 private subnets
-3 public subnets  
+-  VPC requirements 6 subnets, 3 private subnets, 3 public subnets.  
 
 -  Public subnets should have IGW attached to it in order to have access to the internet.  
 
-- -Configure route tables properly.
+- Configure route tables properly.
 Once private and public subnet created, please create ec2 instance (manually)  on public subnet and ping google.com. If everything is successful, you should have proper response
 
 -  Moving forward, on that VPC you just provisioned, please create ec2 intance to install Jenkins:
